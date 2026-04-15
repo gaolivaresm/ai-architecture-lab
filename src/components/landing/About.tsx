@@ -1,4 +1,4 @@
-import { User } from "lucide-react";
+import guillermoPhoto from "@/assets/guillermo-olivares.jpg";
 
 const credentials = [
   "Socio Director | TAETT Arquitectura & Estructuras",
@@ -28,8 +28,8 @@ const About = () => {
 
         <div className="grid md:grid-cols-[240px_1fr] gap-10 items-start">
           {/* Photo placeholder */}
-          <div className="mx-auto md:mx-0 w-60 h-72 bg-secondary rounded-lg border border-border flex items-center justify-center">
-            <User size={64} className="text-muted-foreground/40" />
+          <div className="mx-auto md:mx-0 w-60 h-72 rounded-lg border border-border overflow-hidden">
+            <img src={guillermoPhoto} alt="Guillermo Olivares Martínez" className="w-full h-full object-cover" />
           </div>
 
           <div>
