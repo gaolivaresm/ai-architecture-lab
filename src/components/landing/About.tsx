@@ -1,4 +1,4 @@
-import { User } from "lucide-react";
+import guillermoPhoto from "@/assets/guillermo-olivares.jpg";
 
 const credentials = [
   "Socio Director | TAETT Arquitectura & Estructuras",
