@@ -44,7 +44,7 @@ const Investment = () => {
 
         <div className="text-center mt-10">
           <a
-            href="https://wa.me/56900000000?text=Hola%2C%20quiero%20reservar%20mi%20cupo%20en%20el%20taller%20de%20IA%20para%20Arquitectos"
+            href="https://wa.me/56985336183?text=Hola%2C%20quiero%20reservar%20mi%20cupo%20en%20el%20taller%20de%20IA%20para%20Arquitectos"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-accent text-accent-foreground font-semibold px-8 py-4 rounded text-sm hover:opacity-90 transition-opacity"
