@@ -1,4 +1,9 @@
-// ... (importaciones existentes)
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const modules = [
   {
@@ -56,4 +61,51 @@ const modules = [
   },
 ];
 
-// ... (resto del componente)
+const Program = () => {
+  return (
+    <section id="programa" className="py-24 px-6 bg-background scroll-mt-20">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2 text-center">
+          Currículum Técnico
+        </h2>
+        <p className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">
+          5 Sesiones de Alto Impacto
+        </p>
+        <p className="text-sm text-muted-foreground text-center mb-16 max-w-lg mx-auto">
+          Cada sesión combina transferencia metodológica, código en vivo y la entrega de activos listos para producción.
+        </p>
+
+        <Accordion type="single" collapsible className="space-y-3">
+          {modules.map((m) => (
+            <AccordionItem
+              key={m.id}
+              value={m.id}
+              className="border border-border rounded-lg px-6 data-[state=open]:border-accent/40 bg-background"
+            >
+              <AccordionTrigger className="hover:no-underline py-5">
+                <div className="flex items-center gap-4 text-left">
+                  <span className="text-xs font-mono bg-secondary text-muted-foreground px-2.5 py-1 rounded">
+                    {m.label}
+                  </span>
+                  <span className="font-semibold text-foreground">{m.title}</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="pb-5">
+                <ul className="space-y-2 ml-14">
+                  {m.topics.map((t) => (
+                    <li key={t} className="text-sm text-muted-foreground flex items-center gap-2">
+                      <span className="w-1 h-1 rounded-full bg-accent flex-shrink-0" />
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </section>
+  );
+};
+
+export default Program;
