@@ -1,12 +1,12 @@
 import { ArrowRight, Monitor, CreditCard, Headphones, Award, Sparkles } from "lucide-react";
 
 const rows = [
-  { icon: Monitor, label: "Formato", value: "Programa de Mentoría: 5 sesiones síncronas + Consultoría de proyecto" },
-  { icon: Sparkles, label: "Inscripción Temprana", value: "18 UF (Hasta agotar cupos preventa)", highlight: true },
-  { icon: CreditCard, label: "Precio Lista", value: "22 UF (IVA incluido) · Factura disponible" },
+  { icon: Monitor, label: "Formato", value: "Programa de Mentoría: 5 sesiones síncronas + Consultoría de proyecto final" },
+  { icon: Sparkles, label: "Inscripción Temprana", value: "18 UF (Cupos preventa limitados)", highlight: true },
+  { icon: CreditCard, label: "Precio Lista", value: "22 UF (IVA incluido) · Factura exenta disponible" },
   { icon: CreditCard, label: "Facilidades", value: "3 cuotas sin interés o pago vía Webpay" },
   { icon: Headphones, label: "Activos", value: "Acceso vitalicio a Scripts, Notebooks y Base de Conocimiento" },
-  { icon: Award, label: "Acreditación", value: "Certificado de Especialización Técnica TAETT" },
+  { icon: Award, label: "Acreditación", value: "Certificado de Especialización Técnica TAETT (Sello Consultor MINVU 1A)" },
 ];
 
 const Investment = () => {
@@ -20,7 +20,7 @@ const Investment = () => {
           Cierre de Inscripciones
         </p>
         <p className="text-sm text-muted-foreground text-center mb-16 max-w-md mx-auto">
-          Inversión estratégica diseñada para el ahorro de cientos de horas hombre en flujos de oficina.
+          Inversión estratégica diseñada para el ahorro de cientos de horas hombre mediante automatización e IA.
         </p>
 
         <div className="bg-background border border-border rounded-lg overflow-hidden shadow-sm">
@@ -53,7 +53,7 @@ const Investment = () => {
             <ArrowRight size={16} />
           </a>
           <p className="text-[11px] text-muted-foreground italic">
-            *Grupos reducidos para garantizar la transferencia metodológica directa del instructor.
+            *Acreditación técnica válida para currículum profesional y licitaciones.
           </p>
         </div>
       </div>
