@@ -5,6 +5,8 @@ const credentials = [
   "Consultor Estructural MINVU 1ª Categoría",
   "MSc Computational Simulation (en curso)",
   "Magíster en Estructuras, UPC Barcelona",
+  "Diplomado en Inteligencia Artificial, UC",
+  "Curso Avanzado, Laboratorio Nacional de Computación de Alto Rendimiento (NLHPC)",
   "+20 años de experiencia en 7 países",
 ];
 
@@ -27,13 +29,11 @@ const About = () => {
         </p>
 
         <div className="grid md:grid-cols-[240px_1fr] gap-10 items-start">
-          {/* Photo placeholder */}
           <div className="mx-auto md:mx-0 w-60 h-72 rounded-lg border border-border overflow-hidden">
             <img src={guillermoPhoto} alt="Guillermo Olivares Martínez" className="w-full h-full object-cover" />
           </div>
 
           <div>
-            {/* Credentials */}
             <h3 className="text-xs uppercase tracking-[0.15em] text-muted-foreground mb-4">Credenciales</h3>
             <ul className="space-y-2 mb-8">
               {credentials.map((c) => (
@@ -44,7 +44,6 @@ const About = () => {
               ))}
             </ul>
 
-            {/* Specialization */}
             <h3 className="text-xs uppercase tracking-[0.15em] text-muted-foreground mb-4">Especialización técnica</h3>
             <ul className="space-y-2 mb-8">
               {specializations.map((s) => (
@@ -55,7 +54,6 @@ const About = () => {
               ))}
             </ul>
 
-            {/* Quote */}
             <blockquote className="border-l-2 border-accent pl-5 italic text-sm text-muted-foreground leading-relaxed">
               "No enseñamos teoría abstracta: transferimos metodologías probadas en proyectos reales. Cada módulo está diseñado para que apliques inmediatamente en tu práctica profesional."
             </blockquote>
